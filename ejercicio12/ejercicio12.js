@@ -1,4 +1,7 @@
 let car = parseInt(prompt("ingrese el numero de modelo de su carro"))
+
+while(car < 0){car = parseInt(prompt("ingrese el numero de modelo de su carro"))}
+    
 switch (car) {
     case 119:
         alert(`el automovil esta defectuoso, llevar a garantía`);

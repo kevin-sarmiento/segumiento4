@@ -1,8 +1,24 @@
 let tamaño = prompt("elige el tamaño de sandwich que deseas (grande/pequeño)");
+while (tamaño != "grande" && tamaño != "pequeño"){
+    tamaño = prompt("elige el tamaño de sandwich que deseas (grande/pequeño)");
+}
 let tocineta = prompt("desea tocineta (si/no)");
+while(tocineta != "si" && tocineta != "no"){
+    tocineta = prompt("desea tocineta (si/no)");
+}
 let jalapeño = prompt("desea jalapeño (si/no)");
+while(jalapeño != "si" && jalapeño != "no"){
+    jalapeño = prompt("desea jalapeño (si/no)");
+}
 let pavo = prompt("desea pavo (si/no)");
+while(pavo != "si" && pavo != "no"){
+    pavo = prompt("desea pavo (si/no)");
+}
+
 let queso = prompt("desea queso (si/no)");
+while(queso != "si" && queso != "no"){
+    queso = prompt("desea queso (si/no)");
+}
 let costobase;
 
 if (tamaño === "grande"){

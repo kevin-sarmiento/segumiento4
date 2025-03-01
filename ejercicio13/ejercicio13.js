@@ -1,5 +1,11 @@
 let operador = prompt("ingrese su operador (claro, tigo o movistar)")
+while(operador != "claro" && operador != "tigo" && operador != "movistar"){
+    operador = prompt("ingrese su operador (claro, tigo o movistar)")
+}
 let minutes = parseInt(prompt("ingrese su numero de minutos internacionales consumidos"))
+while(minutes < 0 ){
+    minutes = parseInt(prompt("ingrese su numero de minutos internacionales consumidos"))
+}
 let almacenamiento;
 let paquete;
 let unidadminutes;
@@ -21,6 +27,4 @@ if (operador == "claro"){
     unidadminutes = 250;
     cargo = 40000;
 }
-alert(`señor/a usted tiene como operador ${operador}, el valor de paquete vale ${paquete},\n
-    los minutos internaciones valen ${unidadminutes}, y el cargo fijo cuesta ${cargo}.\n
-    señor/a usted utilizo ${minutes} minutos internacionales asi que en total debe pagar ${almacenamiento} `)
+alert(`señor/a usted tiene como operador ${operador}, el valor de paquete vale ${paquete},\nlos minutos internaciones valen ${unidadminutes}, y el cargo fijo cuesta ${cargo}.\nseñor/a usted utilizo ${minutes} minutos internacionales asi que en total debe pagar ${almacenamiento} `)

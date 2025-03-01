@@ -1,4 +1,7 @@
 let copias = parseInt(prompt("ingrese el numero de copias requerido"))
+while(copias < 0){
+    copias = parseInt(prompt("ingrese el numero de copias requerido"))
+}
 let pago ;
 let total;
 if (copias <= 499) {
